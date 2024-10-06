@@ -1,0 +1,16 @@
+{
+  "name": "@cstroliadavis/is-boolean-property",
+  "version": "1.0.0",
+  "exports": "./index.ts",
+  "compilerOptions": {
+  },
+  "imports": {
+    "@std/expect": "jsr:@std/expect@^1.0.4",
+    "@std/testing": "jsr:@std/testing@^1.0.3"
+  },
+  "publish": {
+    "exclude": [
+      "coverage/"
+    ]
+  }
+}
