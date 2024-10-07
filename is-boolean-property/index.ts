@@ -15,16 +15,12 @@ const BAD_DATA_ERROR_MESSAGE =
  * isBooleanProperty(null, 'isActive');
  * isBooleanProperty(42, 'isActive');
  */
-export default function isBooleanProperty<
-  K extends PropertyKey,
-  D extends Record<PropertyKey, unknown>,
->(
-  data: D,
-  key: K,
-): boolean {
+export default function isBooleanProperty(data: object, key: PropertyKey): boolean {
   if (!data || typeof data !== "object") {
     throw new TypeError(BAD_DATA_ERROR_MESSAGE);
   }
 
-  return typeof data[key] === "boolean";
+  const value: unknown = data[key as keyof typeof data];
+
+  return typeof value === "boolean";
 }
