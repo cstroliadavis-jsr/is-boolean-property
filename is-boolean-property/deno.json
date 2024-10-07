@@ -1,6 +1,6 @@
 {
   "name": "@cstroliadavis/is-boolean-property",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "exports": "./index.ts",
   "compilerOptions": {
   },
