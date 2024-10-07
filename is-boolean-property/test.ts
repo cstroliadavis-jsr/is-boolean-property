@@ -42,7 +42,6 @@ it(
   () => {
     const obj = { count: 5 };
 
-    // @ts-expect-error - Testing invalid data type
     expect(isBooleanProperty(obj, "isActive")).toBe(false);
   },
 );

@@ -17,7 +17,7 @@ const BAD_DATA_ERROR_MESSAGE =
  */
 export default function isBooleanProperty<
   K extends PropertyKey,
-  D extends Record<K, unknown>,
+  D extends Record<PropertyKey, unknown>,
 >(
   data: D,
   key: K,
