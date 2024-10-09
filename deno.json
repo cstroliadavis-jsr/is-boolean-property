@@ -10,7 +10,9 @@
   },
   "publish": {
     "exclude": [
-      "coverage/"
+      "coverage/",
+      ".idea/",
+      ".DS_Store"
     ]
   }
 }
