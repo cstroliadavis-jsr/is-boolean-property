@@ -7,13 +7,15 @@ const BAD_DATA_ERROR_MESSAGE =
  * @param key - The key of the property to check.
  * @returns True if the property value is a boolean; otherwise, false.
  * @throws {TypeError} If the `data` parameter is not a non-null object.
- * @example
+ * @code
+ * ```js
  * const obj = { isActive: true, count: 5 };
  * isBooleanProperty(obj, 'isActive'); // Returns: true
  * isBooleanProperty(obj, 'count');    // Returns: false
  * // Throws TypeError: isBooleanProperty: The "data" parameter must be a non-null object.
  * isBooleanProperty(null, 'isActive');
  * isBooleanProperty(42, 'isActive');
+ * ```
  */
 export default function isBooleanProperty(data: object, key: PropertyKey): boolean {
   if (!data || typeof data !== "object") {
